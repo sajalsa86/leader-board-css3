@@ -5,8 +5,59 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
-    ;
+    margin: 0;
 }
+
+/* header style */
+header {
+    /* width: 1440px; */
+    height: 94px;
+    background: #562EFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+nav {
+    position: relative;
+    top: 20px;
+    width: 950px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+nav span {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    width: 40px;
+}
+
+nav span a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-right: 16px;
+}
+
+nav span a:last-child {
+    padding: 0;
+}
+
+nav span a:hover {
+    background-color: hotpink;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+/* end header style */
 
 main {
     display: flex;
@@ -161,4 +212,57 @@ top blogs style
     background-color: pink;
     border-radius: 45%;
     padding: 10px;
+}
+
+/* Typical Device Breakpoints */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+
+    .course {
+        margin-bottom: 10px;
+
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .top-players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .course {
+        margin-bottom: 10px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
 }

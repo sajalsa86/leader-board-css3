@@ -216,7 +216,9 @@ top blogs style
 /* Typical Device Breakpoints */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 688px) {
-    .container {
+
+    .container,
+    nav {
         width: 100%;
     }
 
@@ -241,7 +243,8 @@ top blogs style
 /* tablet devices */
 @media only screen and (min-width:688px) and (max-width:992px) {
 
-    .container {
+    .container,
+    nav {
         width: 100%;
     }
 
